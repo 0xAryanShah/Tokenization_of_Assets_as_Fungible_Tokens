@@ -12,4 +12,10 @@ contract("Token Test", function(accounts) {
         let instance = await MyToken.deployed();
         return expect(instance.balanceOf(deployerAccount)).to.eventually.be.a.bignumber.equal(new BN(0));
     });
+    it('all tokens should be present in the MyTokenSale Contract', async() => {
+
+    });
+    it('should be possible to buy tokens',async() =>{
+
+    });
 });
