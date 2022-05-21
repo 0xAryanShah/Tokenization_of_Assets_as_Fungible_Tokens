@@ -9,7 +9,7 @@
 ```
 npm install -g truffle
 truffle unbox react
-npm install --save @openzeppelin/contracts
+npm install --save @openzeppelin/contracts@v3.0.0-beta.0
 ```
 Copy the sample code from https://docs.openzeppelin.com/contracts/erc20
 to set up ERC 20 Token
@@ -31,7 +31,7 @@ networks: {
   },
   compilers: {
     solc: {
-    version: "0.8.0"
+    version: "0.6.0"
     }
     }
 ```
@@ -40,3 +40,8 @@ put this into the truffle config file
 using chai-as-promised
 
 https://github.com/domenic/chai-as-promised#how-to-use
+
+Install dotENV for keeping consistent value over the project
+```
+npm install --save dotenv
+```

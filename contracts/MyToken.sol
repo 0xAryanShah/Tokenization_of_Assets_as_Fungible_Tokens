@@ -1,13 +1,13 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol";
 
-contract MyToken is ERC20 {
-    constructor(uint256 initialSupply) ERC20("Starbucks Coffee Token", "STARC") {
+
+contract MyToken is ERC20 ,ERC20Detailed{
+    constructor(uint256 initialSupply) ERC20Detailed("Starbucks Coffee Token", "STARC",0) public {
         _mint(msg.sender, initialSupply);
     }
-    function decimals() public view virtual override returns (uint8) {
-        return 0;
-    }
+    
 }

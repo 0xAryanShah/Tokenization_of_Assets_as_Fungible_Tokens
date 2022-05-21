@@ -8,12 +8,12 @@ module.exports = {
     development: {
       port: 7545,
       host: "127.0.0.1",
-      network_id: 5777
+      network_id: "*"
     }
   },
   compilers: {
     solc: {
-    version: "0.8.0"
+    version: "^0.6.0"
     }
     }
    
