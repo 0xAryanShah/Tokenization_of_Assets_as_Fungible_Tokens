@@ -45,3 +45,4 @@ Install dotENV for keeping consistent value over the project
 ```
 npm install --save dotenv
 ```
+declare only once the supply globally in the env files
